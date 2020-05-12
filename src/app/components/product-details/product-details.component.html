@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-2">
+        <button class="btn btn-primary"[routerLink]="['/home']">Home</button>
+    </div>
+</div>
+<div class="row details-item" >
+   <div class="row border-top shadow-lg details-item1">
+    <div class="col-sm-2">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" [src]="productItemD.imageUrl"/>
+    </div>
+    <div class="col - 9">
+        <p class="card-text">
+            <strong>{{productItemD.price | currency: 'EUR'}}</strong>
+          </p>
+          <hr>
+          <p class="card-text">
+            <small class="text-muted"><strong>{{productItemD.name}}</strong></small>
+          </p>
+          <hr>
+          <p class="card-text">
+            <small class="text-muted"><strong>{{productItemD.desc}}</strong></small>
+          </p>
+    </div>
+    </div>
+</div>
+
+ 
+         

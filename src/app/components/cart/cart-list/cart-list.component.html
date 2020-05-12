@@ -1,0 +1,9 @@
+<p><strong>Total</strong> {{ cartTotal | currency:'EUR' }}</p>
+<div *ngIf="cartItems.length===0" class="alert alert-info">
+    Your cart is empty
+</div>
+<div *ngIf="cartItems.length > 0 " class="row">
+    <div class="col-md-4" *ngFor="let item of cartItems">
+        <app-cart-item [cartItem]="item"></app-cart-item>
+    </div>
+</div>

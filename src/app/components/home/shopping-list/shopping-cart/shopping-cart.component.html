@@ -1,0 +1,13 @@
+<div *ngIf="cartProducts.length === 0">
+    <button  type="button" class="btn btn-light categoryListBtn" [routerLink]="['/cart']"> 
+       
+        <i class="fa fa-shopping-cart fa-3x fa_custom"></i>
+    </button>
+</div>
+
+<div class="cartNumberCount" *ngIf="cartProducts.length > 0" >
+    <button  type="button" class="btn btn-light categoryListBtn" [routerLink]="['/cart']"> 
+        {{itemCount}}
+        <i class="fa fa-shopping-cart fa-3x fa_custom"></i>
+    </button>
+</div>
